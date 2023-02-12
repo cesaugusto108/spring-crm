@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [12/Feb/2023:00:04:37 -0300] "GET /crm/customer/list HTTP/1.1" 200 129 http-bio-8080-exec-1 81
+0:0:0:0:0:0:0:1 - - [12/Feb/2023:00:04:38 -0300] "GET /crm/customer/list HTTP/1.1" 200 129 http-bio-8080-exec-3 3
