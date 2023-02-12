@@ -1,2 +1,11 @@
 0:0:0:0:0:0:0:1 - - [12/Feb/2023:00:04:37 -0300] "GET /crm/customer/list HTTP/1.1" 200 129 http-bio-8080-exec-1 81
 0:0:0:0:0:0:0:1 - - [12/Feb/2023:00:04:38 -0300] "GET /crm/customer/list HTTP/1.1" 200 129 http-bio-8080-exec-3 3
+0:0:0:0:0:0:0:1 - - [12/Feb/2023:11:12:19 -0300] "GET /crm/customer/list/1 HTTP/1.1" 404 949 http-bio-8080-exec-1 50
+0:0:0:0:0:0:0:1 - - [12/Feb/2023:11:13:28 -0300] "GET /crm/customer/list/1 HTTP/1.1" 500 15702 http-bio-8080-exec-1 423
+0:0:0:0:0:0:0:1 - - [12/Feb/2023:11:14:50 -0300] "GET /crm/customer/list/1 HTTP/1.1" 200 207 http-bio-8080-exec-1 906
+0:0:0:0:0:0:0:1 - - [12/Feb/2023:11:17:16 -0300] "GET /crm/customer/list/3 HTTP/1.1" 200 210 http-bio-8080-exec-4 7
+0:0:0:0:0:0:0:1 - - [12/Feb/2023:11:17:21 -0300] "GET /crm/customer/list/2 HTTP/1.1" 200 206 http-bio-8080-exec-6 6
+0:0:0:0:0:0:0:1 - - [12/Feb/2023:11:21:58 -0300] "GET /crm/customer/list/2 HTTP/1.1" 200 206 http-bio-8080-exec-1 880
+0:0:0:0:0:0:0:1 - - [12/Feb/2023:11:22:00 -0300] "GET /crm/customer/list/1 HTTP/1.1" 200 207 http-bio-8080-exec-3 7
+0:0:0:0:0:0:0:1 - - [12/Feb/2023:11:22:05 -0300] "GET /crm/customer/list/6 HTTP/1.1" 500 5324 http-bio-8080-exec-4 13
+0:0:0:0:0:0:0:1 - - [12/Feb/2023:11:22:12 -0300] "GET /crm/customer/list/5 HTTP/1.1" 200 208 http-bio-8080-exec-2 8

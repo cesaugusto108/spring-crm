@@ -1,1 +1,8 @@
+ces\augusto108\springcrm\services\CustomerService.class
+ces\augusto108\springcrm\dao\CustomerDAOImpl.class
+ces\augusto108\springcrm\entities\BaseEntity.class
+ces\augusto108\springcrm\services\CustomerServiceImpl.class
 ces\augusto108\springcrm\controller\CustomerController.class
+ces\augusto108\springcrm\entities\Customer.class
+ces\augusto108\springcrm\dao\CustomerDAO.class
+ces\augusto108\springcrm\entities\Name.class
