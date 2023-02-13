@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 
-import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
@@ -13,7 +12,6 @@ import java.util.List;
 public class CustomerDAOImpl implements CustomerDAO {
     private final SessionFactory sessionFactory;
 
-    @Transactional
     @Override
     public Customer getCustomer(int id) {
         return (Customer) sessionFactory
@@ -23,7 +21,6 @@ public class CustomerDAOImpl implements CustomerDAO {
                 .getSingleResult();
     }
 
-    @Transactional
     @Override
     public List<Customer> getCustomers() {
         return sessionFactory

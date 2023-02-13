@@ -36,7 +36,7 @@
             thead {
                 background-color: rgb(247, 244, 244);
             }
-            
+
             th {
                 padding: 1rem;
                 border-radius: 5px;
@@ -56,7 +56,23 @@
                 padding: 1rem;
                 margin-bottom: 1rem;
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .btn {
+                height: 35px;
+                padding: 0px 20px;
+                margin: auto 0;
+                background-color: rgb(247, 244, 244);
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .btn:hover {
+                background-color: #5a5555;
+                color: aliceblue;
             }
 
             .container {
@@ -72,6 +88,8 @@
         <div class="wrapper">
             <div class="header">
                 <h1>CRM - Customer Relationship Manager</h1>
+                <input type="button" value="Add Customer" onclick="window.location.href='../adding-form'; return false;"
+                    class="btn" />
             </div>
         </div>
         <div class="container">
