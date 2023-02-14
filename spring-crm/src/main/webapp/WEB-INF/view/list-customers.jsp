@@ -131,7 +131,7 @@
                     <tbody>
                         <c:forEach var="customer" items="${customers}">
                             <c:url var="update" value="../update-form">
-                                <c:param name="customer-id" value="${customer.id}" />
+                                <c:param name="id" value="${customer.id}" />
                             </c:url>
 
                             <tr>

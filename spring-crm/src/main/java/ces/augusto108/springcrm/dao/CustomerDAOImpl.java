@@ -30,7 +30,7 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     @Override
-    public void saveCustomer(Customer customer) {
-        sessionFactory.getCurrentSession().save(customer);
+    public void saveOrUpdate(Customer customer) {
+        sessionFactory.getCurrentSession().saveOrUpdate(customer);
     }
 }
