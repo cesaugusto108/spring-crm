@@ -50,4 +50,13 @@ public class CustomerController {
 
         return modelAndView;
     }
+
+    @GetMapping("/delete")
+    public String deleteCustomer(@RequestParam int id) {
+        Customer customer = customerService.getCustomer(id);
+
+        if (customer != null) customerService.deleteCustomer(customer);
+
+        return "redirect:/customer/list/all";
+    }
 }
