@@ -55,6 +55,16 @@
                 border-bottom: 1px solid rgb(247, 244, 244);
             }
 
+            a {
+                text-decoration: none;
+                color: dimgray;
+                font-weight: bold;
+            }
+
+            a:hover {
+                color: cornflowerblue;
+            }
+
             .header {
                 background-color: gainsboro;
                 padding: 1rem;
@@ -83,6 +93,16 @@
                 width: 70vw;
                 margin: 0 auto;
             }
+
+            .delete {
+                font-weight: 400;
+                color: orangered;
+            }
+
+            .delete:hover {
+                font-weight: bold;
+                color: red;
+            }
         </style>
 
         <title>Customers list</title>
@@ -104,6 +124,8 @@
                             <th>First name</th>
                             <th>Last name</th>
                             <th>Email</th>
+                            <th></th>
+                            <th></th>
                         </tr>
                     </thead>
 
@@ -113,6 +135,8 @@
                                 <td>${customer.name.firstName}</td>
                                 <td>${customer.name.lastName}</td>
                                 <td>${customer.email}</td>
+                                <td><a href="">update</a></td>
+                                <td><a href="" class="delete">delete</a></td>
                             </tr>
                         </c:forEach>
                     </tbody>
