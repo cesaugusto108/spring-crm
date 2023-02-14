@@ -58,10 +58,10 @@
             a {
                 text-decoration: none;
                 color: dimgray;
-                font-weight: bold;
             }
 
             a:hover {
+                font-weight: bold;
                 color: cornflowerblue;
             }
 
@@ -95,7 +95,6 @@
             }
 
             .delete {
-                font-weight: 400;
                 color: orangered;
             }
 
@@ -131,11 +130,15 @@
 
                     <tbody>
                         <c:forEach var="customer" items="${customers}">
+                            <c:url var="update" value="../update-form">
+                                <c:param name="customer-id" value="${customer.id}" />
+                            </c:url>
+
                             <tr>
                                 <td>${customer.name.firstName}</td>
                                 <td>${customer.name.lastName}</td>
                                 <td>${customer.email}</td>
-                                <td><a href="">update</a></td>
+                                <td><a href="${update}">update</a></td>
                                 <td><a href="" class="delete">delete</a></td>
                             </tr>
                         </c:forEach>

@@ -4,3 +4,10 @@
 0:0:0:0:0:0:0:1 - - [14/Feb/2023:10:19:33 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 5395 http-bio-8080-exec-6 630
 0:0:0:0:0:0:0:1 - - [14/Feb/2023:10:21:00 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 5500 http-bio-8080-exec-9 92
 0:0:0:0:0:0:0:1 - - [14/Feb/2023:10:22:47 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 5723 http-bio-8080-exec-3 63
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:10:26:19 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 6430 http-bio-8080-exec-5 63
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:10:27:08 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 6467 http-bio-8080-exec-5 57
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:10:27:55 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 6465 http-bio-8080-exec-5 54
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:10:28:31 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 6500 http-bio-8080-exec-5 52
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:10:29:08 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 6536 http-bio-8080-exec-5 54
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:10:29:57 -0300] "GET /crm/customer/adding-form HTTP/1.1" 200 3895 http-bio-8080-exec-5 5
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:10:30:05 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 6536 http-bio-8080-exec-5 6
