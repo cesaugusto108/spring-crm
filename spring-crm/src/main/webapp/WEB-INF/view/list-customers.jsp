@@ -46,6 +46,10 @@
                 text-align: center;
             }
 
+            tbody tr:hover {
+                background-color: whitesmoke;
+            }
+
             td {
                 padding: 0.8rem;
                 border-bottom: 1px solid rgb(247, 244, 244);

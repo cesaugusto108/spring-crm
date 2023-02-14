@@ -8,20 +8,24 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.util.List;
 
+@Transactional
 @Service
 @AllArgsConstructor
 public class CustomerServiceImpl implements CustomerService {
     private final CustomerDAO customerDAO;
 
-    @Transactional
     @Override
     public Customer getCustomer(int id) {
         return customerDAO.getCustomer(id);
     }
 
-    @Transactional
     @Override
     public List<Customer> getCustomers() {
         return customerDAO.getCustomers();
+    }
+
+    @Override
+    public void saveCustomer(Customer customer) {
+        customerDAO.saveCustomer(customer);
     }
 }
