@@ -1,7 +1,6 @@
 package ces.augusto108.springcrm.controller;
 
 import ces.augusto108.springcrm.entities.Customer;
-import ces.augusto108.springcrm.entities.Name;
 import ces.augusto108.springcrm.services.CustomerService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
