@@ -1,18 +1,31 @@
 package ces.augusto108.springcrm.controller;
 
 import ces.augusto108.springcrm.entities.Customer;
+import ces.augusto108.springcrm.entities.Name;
 import ces.augusto108.springcrm.services.CustomerService;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/customer")
 @AllArgsConstructor
 public class CustomerController {
     private final CustomerService customerService;
+
+    @InitBinder
+    public void initBinder(WebDataBinder dataBinder) {
+        StringTrimmerEditor editor = new StringTrimmerEditor(true);
+
+        dataBinder.registerCustomEditor(String.class, editor);
+    }
 
     @GetMapping("/list/all")
     public ModelAndView listCustomers(Model model) {
@@ -35,8 +48,12 @@ public class CustomerController {
     }
 
     @PostMapping("/save-customer")
-    public String saveOrUpdate(@ModelAttribute("customer") Customer customer) {
-        if (customer != null) customerService.saveOrUpdate(customer);
+    public String saveOrUpdate(
+            @Valid @ModelAttribute("customer") Customer customer, BindingResult result
+    ) {
+        if (result.hasErrors()) return "adding-form";
+
+        customerService.saveOrUpdate(customer);
 
         return "redirect:/customer/list/all";
     }
@@ -55,7 +72,7 @@ public class CustomerController {
     public String deleteCustomer(@RequestParam int id) {
         Customer customer = customerService.getCustomer(id);
 
-        if (customer != null) customerService.deleteCustomer(customer);
+        customerService.deleteCustomer(customer);
 
         return "redirect:/customer/list/all";
     }

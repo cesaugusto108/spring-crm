@@ -5,15 +5,20 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = true, of = {})
 public class Customer extends BaseEntity {
+    @Valid
     private Name name;
 
+    @NotNull(message = "this is required")
     @Column(unique = true)
     private String email;
 

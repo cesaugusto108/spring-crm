@@ -90,6 +90,11 @@
                 background-color: #5a5555;
                 color: aliceblue;
             }
+
+            .error {
+                color: red;
+                margin-left: 1rem;
+            }
         </style>
 
         <title>Add a new customer</title>
@@ -103,21 +108,26 @@
                     class="btn" />
             </div>
 
-            <h2>Add a new customer: </h2>
-
             <div class="container">
                 <form:form action="save-customer" modelAttribute="customer" method="POST">
+                    <form:hidden path="id" />
+
                     <p>First name:</p>
                     <form:input type="text" placeholder="Enter the customer's first name here" path="name.firstName"
                         class="input" />
+                    <form:errors path="name.firstName" cssClass="error" />
+
                     <p>Last name:</p>
                     <form:input type="text" placeholder="Enter the customer's last name here" path="name.lastName"
                         class="input" />
+                    <form:errors path="name.lastName" cssClass="error" />
+
                     <p>Email:</p>
                     <form:input type="text"  placeholder="Enter the customer's email here" path="email" class="input" />
+                    <form:errors path="email" cssClass="error" />
 
                     <br>
-                    <input type="submit" value="Submit" class="btn" />
+                    <input type="submit" value="Save" class="btn" />
                 </form:form>
             </div>
         </div>
