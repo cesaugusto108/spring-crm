@@ -293,3 +293,10 @@
 0:0:0:0:0:0:0:1 - - [14/Feb/2023:23:13:44 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 9018 http-bio-8080-exec-10 6
 0:0:0:0:0:0:0:1 - - [14/Feb/2023:23:13:49 -0300] "GET /crm/customer/delete?id=19 HTTP/1.1" 302 - http-bio-8080-exec-10 9
 0:0:0:0:0:0:0:1 - - [14/Feb/2023:23:13:49 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 8356 http-bio-8080-exec-10 6
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:23:35:25 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 8356 http-bio-8080-exec-1 634
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:23:35:25 -0300] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:23:35:28 -0300] "GET /crm/customer/update-form?id=3 HTTP/1.1" 200 3908 http-bio-8080-exec-4 64
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:23:35:34 -0300] "POST /crm/customer/save-customer HTTP/1.1" 302 - http-bio-8080-exec-5 67
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:23:35:34 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 8356 http-bio-8080-exec-6 9
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:23:35:40 -0300] "GET /crm/customer/delete?id=2 HTTP/1.1" 302 - http-bio-8080-exec-7 24
+0:0:0:0:0:0:0:1 - - [14/Feb/2023:23:35:40 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 7682 http-bio-8080-exec-8 8

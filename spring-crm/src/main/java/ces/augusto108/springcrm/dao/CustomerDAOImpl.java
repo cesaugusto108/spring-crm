@@ -14,9 +14,9 @@ public class CustomerDAOImpl implements CustomerDAO {
 
     @Override
     public Customer getCustomer(int id) {
-        return (Customer) sessionFactory
+        return sessionFactory
                 .getCurrentSession()
-                .createQuery("from Customer c where id = :id")
+                .createQuery("from Customer c where id = :id", Customer.class)
                 .setParameter("id", id)
                 .getSingleResult();
     }
