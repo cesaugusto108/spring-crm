@@ -24,3 +24,7 @@
 127.0.0.1 - - [21/Feb/2023:20:27:27 -0300] "GET /crm/customer/update-form?id=4 HTTP/1.1" 200 3782 http-bio-8080-exec-5 38
 127.0.0.1 - - [21/Feb/2023:20:27:32 -0300] "POST /crm/customer/save-customer HTTP/1.1" 302 - http-bio-8080-exec-6 38
 127.0.0.1 - - [21/Feb/2023:20:27:32 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 6176 http-bio-8080-exec-7 11
+127.0.0.1 - - [21/Feb/2023:21:21:25 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 6176 http-bio-8080-exec-1 484
+127.0.0.1 - - [21/Feb/2023:21:21:28 -0300] "GET /crm/customer/update-form?id=4 HTTP/1.1" 200 3783 http-bio-8080-exec-3 59
+127.0.0.1 - - [21/Feb/2023:21:21:35 -0300] "POST /crm/customer/save-customer HTTP/1.1" 302 - http-bio-8080-exec-4 449
+127.0.0.1 - - [21/Feb/2023:21:21:35 -0300] "GET /crm/customer/list/all HTTP/1.1" 200 6175 http-bio-8080-exec-5 11
