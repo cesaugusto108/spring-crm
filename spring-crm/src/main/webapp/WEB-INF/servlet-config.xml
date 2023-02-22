@@ -34,7 +34,7 @@
         <property name="jdbcUrl"
                   value="jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false&amp;serverTimezone=UTC"/>
         <property name="user" value="springstudent"/>
-        <property name="password" value="springstudent"/>
+        <property name="password" value="Mkoqke@#jmaL:398"/>
 
         <!-- these are connection pool properties for C3P0 -->
         <property name="initialPoolSize" value="5"/>
